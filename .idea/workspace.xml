@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="704cff39-647f-4ad5-b19a-59e15a1284f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bank/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bank/BankService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bank/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Bank/AccountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Bank/BankServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Bank/TransactionTest.java" afterDir="false" />
+    <list default="true" id="704cff39-647f-4ad5-b19a-59e15a1284f5" name="Changes" comment="Registro banco">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bank/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bank/repository/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bank/repository/TransactionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bank/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bank/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bank/service/BankService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bank/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bank/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Bank/AccountTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Bank/BankServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Bank/BankServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Bank/TransactionTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -61,6 +65,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HotelUtilsTest.executor": "Run",
+    "JUnit.BankServiceTest.executor": "Debug",
+    "JUnit.BankServiceTest.shouldCreateAccount.executor": "Run",
+    "JUnit.BankServiceTest.shouldFailWhenDailyLimitExceeded.executor": "Run",
+    "JUnit.BankServiceTest.shouldFailWhenDestinationAccountDoesNotExist.executor": "Run",
+    "JUnit.BankServiceTest.shouldFailWhenInsufficientBalance.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -72,23 +81,93 @@
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="HotelUtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Utils.HotelUtilsTest" />
+  <component name="RunManager" selected="JUnit.BankServiceTest.shouldFailWhenDailyLimitExceeded">
+    <configuration name="BankServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ExamenPST1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Utils.*" />
+          <option name="PATTERN" value="Bank.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Bank" />
+      <option name="MAIN_CLASS_NAME" value="Bank.BankServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankServiceTest.shouldCreateAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExamenPST1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Bank" />
+      <option name="MAIN_CLASS_NAME" value="Bank.BankServiceTest" />
+      <option name="METHOD_NAME" value="shouldCreateAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankServiceTest.shouldFailWhenDailyLimitExceeded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExamenPST1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Bank" />
+      <option name="MAIN_CLASS_NAME" value="Bank.BankServiceTest" />
+      <option name="METHOD_NAME" value="shouldFailWhenDailyLimitExceeded" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankServiceTest.shouldFailWhenDestinationAccountDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExamenPST1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Bank" />
+      <option name="MAIN_CLASS_NAME" value="Bank.BankServiceTest" />
+      <option name="METHOD_NAME" value="shouldFailWhenDestinationAccountDoesNotExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankServiceTest.shouldFailWhenInsufficientBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExamenPST1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Bank" />
+      <option name="MAIN_CLASS_NAME" value="Bank.BankServiceTest" />
+      <option name="METHOD_NAME" value="shouldFailWhenInsufficientBalance" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HotelUtilsTest" />
+        <item itemvalue="JUnit.BankServiceTest.shouldFailWhenDailyLimitExceeded" />
+        <item itemvalue="JUnit.BankServiceTest.shouldFailWhenInsufficientBalance" />
+        <item itemvalue="JUnit.BankServiceTest.shouldFailWhenDestinationAccountDoesNotExist" />
+        <item itemvalue="JUnit.BankServiceTest.shouldCreateAccount" />
+        <item itemvalue="JUnit.BankServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774833039143</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Registro banco">
+      <option name="closed" value="true" />
+      <created>1774834103447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1774834103447</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +229,7 @@
     <MESSAGE value="validacion nombre" />
     <MESSAGE value="validacion Fecha" />
     <MESSAGE value="validacion resultado" />
-    <option name="LAST_COMMIT_MESSAGE" value="validacion resultado" />
+    <MESSAGE value="Registro banco" />
+    <option name="LAST_COMMIT_MESSAGE" value="Registro banco" />
   </component>
 </project>
