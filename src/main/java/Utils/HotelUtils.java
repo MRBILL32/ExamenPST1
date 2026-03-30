@@ -6,6 +6,14 @@ public class HotelUtils {
 
     public static String registrar(String habitacion, String nombre, LocalDate fechaReserva) {
 
+        // campos vacios
+        if (habitacion == null || habitacion.isEmpty() ||
+                nombre == null || nombre.isEmpty() ||
+                fechaReserva == null)
+        {
+            return "Debe ingresar los datos requeridos";
+        }
+
         // validacion habitacion
         if (!habitacion.matches("[1-3][0-9]{2}"))
         {
