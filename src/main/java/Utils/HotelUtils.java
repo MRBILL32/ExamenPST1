@@ -12,6 +12,12 @@ public class HotelUtils {
             return "Ingrese una habitación valida";
         }
 
+        // validacion nombre
+        if (!nombre.matches("[a-zA-Z]{4,}"))
+        {
+            return "Recuerde que el nombre del cliente debe contener al menos cuatro caracteres";
+        }
+
         return "El registro ha sido exitoso";
     }
 }

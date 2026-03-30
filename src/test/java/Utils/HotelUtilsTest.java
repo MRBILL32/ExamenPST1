@@ -26,5 +26,22 @@ public class HotelUtilsTest {
                 HotelUtils.registrar("401", "Carlos", LocalDate.now().plusDays(1)),
                 "Ingrese una habitación valida"
         );
+
+        System.out.println("\n=== VALIDACION: NOMBRE ===");
+
+        // Nombre valido
+        assertEquals(
+                HotelUtils.registrar("101", "Miguel", LocalDate.now().plusDays(1)),
+                "El registro ha sido exitoso"
+        );
+
+        // Nombre invalido
+        assertEquals(
+                HotelUtils.registrar("101", "Ana", LocalDate.now().plusDays(1)),
+                "Recuerde que el nombre del cliente debe contener al menos cuatro caracteres"
+        );
+
+
+
     }
 }
