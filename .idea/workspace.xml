@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="704cff39-647f-4ad5-b19a-59e15a1284f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/HotelUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/HotelUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bank/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bank/BankService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bank/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Bank/AccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Bank/BankServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Bank/TransactionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,21 +35,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MRBILL32"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MRBILL32&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MRBILL32/ExamenPST1.git",
-    "accountId": "986dad76-d862-4131-93cb-83f3009c7e98"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MRBILL32/ExamenPST1.git&quot;,
+    &quot;accountId&quot;: &quot;986dad76-d862-4131-93cb-83f3009c7e98&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3BdwVhp9I2aY2us3VtV60q6NPvP" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -62,7 +69,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RunManager">
@@ -93,9 +100,48 @@
       <option name="presentableId" value="Default" />
       <updated>1774832282420</updated>
     </task>
+    <task id="LOCAL-00001" summary="validacion nombre">
+      <option name="closed" value="true" />
+      <created>1774832790963</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1774832790963</updated>
+    </task>
+    <task id="LOCAL-00002" summary="validacion Fecha">
+      <option name="closed" value="true" />
+      <created>1774832898561</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1774832898561</updated>
+    </task>
+    <task id="LOCAL-00003" summary="validacion resultado">
+      <option name="closed" value="true" />
+      <created>1774833000615</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1774833000615</updated>
+    </task>
+    <task id="LOCAL-00004" summary="validacion resultado">
+      <option name="closed" value="true" />
+      <created>1774833039143</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1774833039143</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="validacion nombre" />
+    <MESSAGE value="validacion Fecha" />
+    <MESSAGE value="validacion resultado" />
+    <option name="LAST_COMMIT_MESSAGE" value="validacion resultado" />
   </component>
 </project>
