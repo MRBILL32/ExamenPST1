@@ -6,7 +6,7 @@ public class HotelUtilsTest {
 
     private static void assertEquals(String actual, String expected) {
         if (!actual.equals(expected)) {
-            System.out.println("TEST FAILED: " + actual + " se esperaba " + expected);
+            System.out.println("TEST FAILED: " + actual + " was expected " + expected);
         } else {
             System.out.println("TEST PASSED: " + actual);
         }
@@ -55,8 +55,18 @@ public class HotelUtilsTest {
                 "Debe ingresar una fecha valida"
         );
 
+        System.out.println("\n=== TEST RESULTADO ===");
 
+        //resultado correcto
+        assertEquals(
+                HotelUtils.registrar("256", "Martinez", LocalDate.now().plusDays(5)),
+                "El registro ha sido exitoso"
+        );
 
-
+        // resultado vacio
+        assertEquals(
+                HotelUtils.registrar("", "", null),
+                "Debe ingresar los datos requeridos"
+        );
     }
 }
