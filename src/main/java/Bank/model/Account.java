@@ -4,6 +4,7 @@ public class Account {
 
     private String id;
     private double balance;
+    private boolean blocked;
 
     public Account(String id, double balance) {
         this.id = id;
@@ -24,5 +25,12 @@ public class Account {
 
     public void credit(double amount) {
         this.balance += amount;
+    }
+
+    public boolean isBlocked() {
+        return blocked;
+    }
+    public void block() {
+        this.blocked = true;
     }
 }
