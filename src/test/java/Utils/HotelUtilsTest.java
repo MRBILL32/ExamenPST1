@@ -41,6 +41,21 @@ public class HotelUtilsTest {
                 "Recuerde que el nombre del cliente debe contener al menos cuatro caracteres"
         );
 
+        System.out.println("\n=== VALIDACION: FECHA ===");
+
+        // Fecha valida
+        assertEquals(
+                HotelUtils.registrar("101", "Carlos", LocalDate.now().plusDays(2)),
+                "El registro ha sido exitoso"
+        );
+
+        // Fecha invalida
+        assertEquals(
+                HotelUtils.registrar("101", "Carlos", LocalDate.now().minusDays(1)),
+                "Debe ingresar una fecha valida"
+        );
+
+
 
 
     }

@@ -18,6 +18,12 @@ public class HotelUtils {
             return "Recuerde que el nombre del cliente debe contener al menos cuatro caracteres";
         }
 
+        // validacion fecha
+        if (!fechaReserva.isAfter(LocalDate.now()))
+        {
+            return "Debe ingresar una fecha valida";
+        }
+
         return "El registro ha sido exitoso";
     }
 }
